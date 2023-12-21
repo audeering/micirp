@@ -1,7 +1,22 @@
 # micirp
 
-Publishes `micirp` on artifactory.
+This project holds code
+to convert the [micirp] dataset of microphone impulse responses
+to [audformat]
+and publish it with [audb]
+to a public Artifactory repository
+on https://audeering.jfrog.io.
 
-For version `1.0.0`, the files from [here](https://github.com/fschmid56/cpjku_dcase23/tree/main/datasets/dirs)
-were downloaded into the folder `1.0.0/dirs`.
-The files `B&O_BM2.wav` and `B&O_BM6.wav` were renamed to `BandO_BM2.wav` and `BandO_BM6.wav`.
+The databases is published under [CC BY SA 4.0]
+and can be downloaded with the Python library [audb]:
+
+```python
+import audb
+
+db = audb.load('micirp')
+```
+
+[CC BY SA 4.0]: https://creativecommons.org/licenses/by-sa/4.0/
+[micirp]: https://micirp.blogspot.com
+[audb]: https://github.com/audeering/audb/
+[audformat]: https://github.com/audeering/audformat/
