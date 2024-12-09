@@ -1,5 +1,10 @@
 # micirp
 
+For further publications of `micirp`, please go to
+https://github.com/audeering/datasets/tree/main/datasets/micirp
+
+---
+
 This project holds code
 to convert the [micirp] dataset of microphone impulse responses
 to [audformat]
